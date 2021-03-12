@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css">
+
   <title>Frontend Mentor | Profile card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,21 +18,31 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <div class="background">
+    <div class="card">
+      <div class="bg-pattern-container">
+        <img src="images/bg-pattern-card.svg">
+      </div>
+      <div class="profile">
+        <img src="images/matt_hoelzel.jpg">
+        <h1 class="name">Matt Hoelzel <span class="age">37</span></h1>
+        <h1 class="city">Denver</h1>
+      </div>
+      <div class="status-numbers-container">
+        <p class="number">80K</p>
+        <p class="number">803K</p>
+        <p class="number">1.4K</p>
+      </div>
+      <div class="status-names-container">
+        <p id="followers">Followers</p>
+        <p id="likes">Likes</p>
+        <p id="photos">Photos</p>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://matt-hoelzel.herokuapp.com/">Matt Hoelzel</a>.
   </div>
 </body>
 </html>

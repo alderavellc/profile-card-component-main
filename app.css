@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Kumbh Sans;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: top -50vh left, bottom -50vh right;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+}
+
+.card {
+  width: 350px;
+  height: 370px;
+  background-color: white;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  height:100px;
+  width: 100 px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-top: -60px;
+}
+
+.profile .name {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(229, 23%, 23%);
+}
+
+.profile .age {
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  margin-left: 5px;
+}
+
+.city {
+  font-weight: 200;
+  color: hsl(0, 0%, 59%);
+  font-size: 15px;
+}
+
+.status-numbers-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.status-numbers-container .number {
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.status-names-container {
+  margin-top: -25px;
+  font-size: 12px;
+  color: hsl(0, 0%, 59%);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#followers {
+  margin-left: -15px;
+}
+
+#likes {
+  margin-right: 10px;
+}
+
+#photos {
+  margin-right: -10px;
+}
